@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border-width: 10px;
+            border-style: groove;
+            border-color: darkgray;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: coral;
+        }
+
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: blueviolet;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <p>Todo elemento do HTML é renderizado pelo navegador como uma box. Essa box pode ser alterada com as propriedades CSS: margin, border, padding e height/width. O margin nada mais vai movimentar o elemento, para a esquerda, direita, para cima ou para baixo. O border é a borda, dá pra definir o tamanho de borda, cor e modo de exibição. O padding é o preencimento, ele vai colocar o um espaçamento dentro do elemento. Width/height representam o conteúdo do elemento, um texto, uma imagem, um vídeo....</p>
+
+    <h2>Shorthand:</h2>
+    <p>Podemos usar shorthands para simplificar o código CSS, lembrando que é necessário estar em ordem, caso contrário não funcionará.</p>
+    <ul>
+        <li>shorthand para border: width style color</li>
+        <li>shorthand para padding: top right bottom left</li>
+        <li>shorthand para margin: top right bottom left</li>
+        <li>shorthandpara outline: width style color</li>
+    </ul>
+    <h2>Observações importantes:</h2>
+    <p>Podemos alterar o modelo da caixa de block ou para inline usando display: inline ou block para transformar em uma caixa inline ou blokc respectivamente.</p>
+    <p>Podemos deixar a caixa centralizada na tale utilizando o "margin: auto;"</p>
+</body>
+</html>
