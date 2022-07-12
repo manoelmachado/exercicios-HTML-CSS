@@ -84,7 +84,6 @@ section#img01 {
     background-position: right center;
     background-size: cover;
 }
-
 section#img02 {
     background-image: url(../imagens/background002.jpg);
     background-size: cover;
@@ -95,4 +94,9 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
+}
+
+@media (max-width:840px) {
+    section.imagem {
+    background-attachment: scroll;}
 }
