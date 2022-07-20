@@ -5,6 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomia de tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        
+        thead, tfoot {
+            background: gray;
+            color: white;
+        }
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        .num { 
+            text-align: right;
+       }
+     
+    </style>
 </head>
 <body>
 <!-- ANATOMIA PARA TABELAS GRANDES
@@ -20,21 +54,39 @@
             
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
+                <td>São Paulo</td>
+                <td class="num">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
+                <th scope="row">Total</th>
+                <td class="num"><strong>92 274 890</strong></td>
             </tr>
         </tfoot>
 
